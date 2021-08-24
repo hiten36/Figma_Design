@@ -1,0 +1,146 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 120vmin;
+    margin: 3rem;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    margin-bottom: 2rem;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.box21{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.box22{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.201);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 1rem;
+    width:45%;
+}
+.img{
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: orange;
+    width: 80px;
+    margin-bottom: 1rem;
+}
+.img img{
+    width: 100%;
+    filter: invert(1);
+}
+.img h5{
+    margin: 10px 0px;
+}
+.box3:hover{
+    background-color: rgb(255, 195, 83);
+}
+.box3:hover > .img{
+    background-color: white;
+}
+.box3:hover > .img img{
+    filter: invert(0);
+}
+.box4{
+    margin: 0.6rem 0rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+}
+.box4 b{
+    color: orange;
+}
+.box4:hover{
+    background-color: rgb(197, 197, 197);
+}
+@media screen and (max-width:912px) {
+    h4{
+        font-size: 21px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+    b{
+        font-size: 15px;
+    }
+    .img{
+        width: 70px;
+    }
+}
+@media screen and (max-width:870px) {
+    h4{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+    b{
+        font-size: 13px;
+    }
+    .img{
+        width: 60px;
+    }
+}
+@media screen and (max-width:770px) {
+    .main{
+        height: auto;
+    }
+    .box2{
+        flex-direction: column;
+    }
+    .box3{
+        width: 45%;
+    }
+    .box22{
+        width: 100%;
+    }
+    .box21{
+        width: 100%;
+    }
+}
+@media screen and (max-width:595px) {
+    .box3{
+        width: 100%;
+    }
+    .box{
+        margin: 2rem;
+    }
+}
